@@ -65,6 +65,11 @@ export const CardDoughnut = styled.div`
         height: 70%;
         width: 70%;
     }
+    
+    @media (max-width: 400px) {
+        height: 100%;
+        width: 100%;
+    }
 `;
 
 export const CardVerticalBarChart = styled.div`
@@ -77,5 +82,10 @@ export const CardVerticalBarChart = styled.div`
     @media (max-width: 1400px) {
         height: 70%;
         width: 70%;
+    }
+
+    @media (max-width: 400px) {
+        height: 100%;
+        width: 100%;
     }
 `;
