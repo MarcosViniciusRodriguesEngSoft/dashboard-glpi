@@ -1,4 +1,3 @@
-import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import * as C from '../../helpers/styles';
 
 function CardTotais() {
