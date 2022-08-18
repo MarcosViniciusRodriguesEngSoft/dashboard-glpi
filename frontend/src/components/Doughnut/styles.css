@@ -1,0 +1,10 @@
+.dash-doughnut{
+    width: 450px;
+}
+
+@media (max-width: 1400px) {
+
+    .dash-doughnut{
+        width: 100%;
+    }
+}

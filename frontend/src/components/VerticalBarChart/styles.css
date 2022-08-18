@@ -1,0 +1,12 @@
+.vertical-bar-chart {
+    height: 500px;
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+
+    .vertical-bar-chart {
+        height: 500px;
+        width: 100%;
+    }
+}
