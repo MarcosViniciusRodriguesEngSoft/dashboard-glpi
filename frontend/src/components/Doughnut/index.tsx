@@ -1,5 +1,5 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { IContadorFullDTO } from '../../_config/base/contador.service';
 import { useContadorService } from '../../_config/services/contador.service';

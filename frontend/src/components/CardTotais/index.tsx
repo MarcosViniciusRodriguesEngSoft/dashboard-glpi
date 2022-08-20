@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import * as C from './styles';
 import * as H from '../../helpers/styles';
 import { IContadorFullDTO } from '../../_config/base/contador.service';
