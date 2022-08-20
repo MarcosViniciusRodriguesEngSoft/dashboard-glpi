@@ -1,5 +1,5 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { IContadorFullDTO } from '../../_config/base/contador.service';
 import { useContadorService } from '../../_config/services/contador.service';
@@ -18,9 +18,9 @@ export function Grafico() {
             .then(response => setContador(response.data));
     }
 
-    /*useEffect(() => {
+    useEffect(() => {
         contadores()
-    }, [contador]);*/
+    });
 
     const data = {
         labels: ['Abertos', 'Solucionados', 'Fechados'],

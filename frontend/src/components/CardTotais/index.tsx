@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import * as C from './styles';
 import * as H from '../../helpers/styles';
 import { IContadorFullDTO } from '../../_config/base/contador.service';
@@ -28,9 +28,9 @@ function CardTotais() {
             .then(response => setContador(response.data));
     }
 
-    /*useEffect(() => {
+    useEffect(() => {
         contadores()
-    }, [contador]);*/
+    });
 
     return (
         <>
