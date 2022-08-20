@@ -1,0 +1,23 @@
+.config-row-space{
+    margin: 15px;
+}
+
+#critico {
+    background:#FF0000;   
+}
+
+#alto {
+    background: linear-gradient(to right, #FFA500, #FFFF00);
+}
+
+#medio {
+    background: linear-gradient(to right, #FFFF00, #FFFF00);
+}
+
+#baixo {
+    background: linear-gradient(to right, #FFFF00, #008000);
+}
+
+#muito-baixo {
+    background: linear-gradient(to right, #008000, #00FF00);
+}

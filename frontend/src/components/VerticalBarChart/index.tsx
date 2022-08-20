@@ -34,20 +34,22 @@ export const options = {
     },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
 export const data = {
     labels,
     datasets: [
         {
-            label: 'Dataset 1',
+            label: 'Chamados Abertos',
             data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            color: "#FFF",
         },
         {
-            label: 'Dataset 2',
+            label: 'Chamados Fechados',
             data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
             backgroundColor: 'rgba(53, 162, 235, 0.5)',
+            color: "#FFF",
         },
     ],
 };
@@ -55,8 +57,7 @@ export const data = {
 export function VerticalBarChart() {
     return (
         <C.CardVerticalBarChart>
-            <Bar className="vertical-bar-chart" options={options} data={data} />;
+            <Bar className="vertical-bar-chart" options={options} data={data} />
         </C.CardVerticalBarChart>
-
-    )
+    );
 }

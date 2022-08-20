@@ -6,8 +6,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.space{
-  margin: 15px;
+h1, h2 {
+  margin: 0 !important;
 }
 
 /*@media (max-width: 1400) {
