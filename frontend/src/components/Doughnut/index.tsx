@@ -18,9 +18,9 @@ export function Grafico() {
             .then(response => setContador(response.data));
     }
 
-    useEffect(() => {
+    /*useEffect(() => {
         contadores()
-    }, [contador]);
+    }, [contador]);*/
 
     const data = {
         labels: ['Abertos', 'Solucionados', 'Fechados'],

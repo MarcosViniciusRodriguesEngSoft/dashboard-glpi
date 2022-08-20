@@ -28,9 +28,9 @@ function CardTotais() {
             .then(response => setContador(response.data));
     }
 
-    useEffect(() => {
+    /*useEffect(() => {
         contadores()
-    }, [contador]);
+    }, [contador]);*/
 
     return (
         <>
