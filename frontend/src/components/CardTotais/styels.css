@@ -1,23 +1,28 @@
-.config-row-space{
+.config-row-space {
     margin: 15px;
 }
 
 #critico {
-    background:#FF0000;   
+    background: RGBA(255, 0, 0, 0.6);
+    border: 5px outset RGBA(255, 0, 0, 0.6);
 }
 
 #alto {
-    background: linear-gradient(to right, #FFA500, #FFFF00);
+    background: RGBA(255, 165, 0, 0.6);
+    border: 5px outset RGBA(255, 165, 0, 0.6);
 }
 
 #medio {
-    background: linear-gradient(to right, #FFFF00, #FFFF00);
+    background: RGBA(255, 255, 0, 0.6);
+    border: 5px outset RGBA(255, 255, 0, 0.6);
 }
 
 #baixo {
-    background: linear-gradient(to right, #FFFF00, #008000);
+    background: RGBA(0, 255, 0, 0.6);
+    border: 5px outset RGBA(0, 255, 0, 0.6);
 }
 
 #muito-baixo {
-    background: linear-gradient(to right, #008000, #00FF00);
+    background: RGBA(0, 128, 0, 0.6);
+    border: 5px outset RGBA(0, 128, 0, 0.6);
 }

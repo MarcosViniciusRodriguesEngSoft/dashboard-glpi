@@ -7,7 +7,7 @@ import {
     Tooltip,
     Legend,
 } from 'chart.js';
-import * as C from "../../helpers/styles";
+import * as C from "./styles";
 import { Bar } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker';
 import "./styles.css";
@@ -56,8 +56,8 @@ export const data = {
 
 export function VerticalBarChart() {
     return (
-        <C.CardVerticalBarChart>
+        <C.CardContainer>
             <Bar className="vertical-bar-chart" options={options} data={data} />
-        </C.CardVerticalBarChart>
+        </C.CardContainer>
     );
 }
