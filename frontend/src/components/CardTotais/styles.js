@@ -60,15 +60,14 @@ border-radius: 10px;
 `;
 
 export const MiniTitle = styled.h1`
-color: #FFF;
+color: #000;
 text-align: center;
-text-decoration: dashed;
 font-size: 1.5em;
 font-weight: 900;
 `;
 
 export const MiniContador = styled.h2`
-color: #FFF;
+color: #000;
 text-align: center;
 font-size: 1.5em;
 font-weight: 900;
