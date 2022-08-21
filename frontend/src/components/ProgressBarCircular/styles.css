@@ -42,7 +42,8 @@
 @media (max-width: 400px) {
 
     .ant-progress-circle {
-        width: 300px !important;
+        width: 290px !important;
+        display: flex !important;
     }
 
     .ant-progress-text {

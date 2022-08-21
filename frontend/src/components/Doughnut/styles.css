@@ -5,6 +5,13 @@
 @media (max-width: 1450px) {
 
     .dash-doughnut{
-        width: 400px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .dash-doughnut{
+        width: 100%;
     }
 }
