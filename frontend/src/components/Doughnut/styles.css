@@ -2,9 +2,9 @@
     width: 450px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
 
     .dash-doughnut{
-        width: 100%;
+        width: 400px;
     }
 }

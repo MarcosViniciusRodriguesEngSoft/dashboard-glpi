@@ -10,12 +10,6 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa
 border: 5px outset;
 border-radius: 10px;
 
-@media (max-width: 1400px) {
-    height: 100%;
-    width: 100%;
-    //margin: 15px;
-}
-
 @media (max-width: 400px) {
     height: 100px;
     width: 175px;
@@ -50,9 +44,14 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa
 border: 5px outset;
 border-radius: 10px;
 
+@media (max-width: 1450px) {
+    width: 350px;
+}
+
 @media (max-width: 400px) {
     width: 350px;
 }
+
 `;
 
 export const MiniCardContainer = styled.div`
@@ -64,10 +63,14 @@ padding: 5px;
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
 border-radius: 10px;
 
+@media (max-width: 1450px) {
+    width: 350px;
+}
+
 @media (max-width: 400px) {
-    height: 100px;
     width: 175px;
 }
+
 `;
 
 export const MiniTitle = styled.h1`

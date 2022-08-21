@@ -3,11 +3,11 @@
     width: max-content;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
 
     .vertical-bar-chart {
         height: 500px;
-        width: 100%;
+        width: max-content;
     }
 }
 

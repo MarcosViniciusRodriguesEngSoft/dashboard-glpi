@@ -27,6 +27,18 @@
     display: contents !important;
 }
 
+@media (max-width: 1450px) {
+
+    .config-responsive-card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .alin-responsive-col{
+        display: flex !important;
+    }
+}
+
 @media (max-width: 400px) {
 
     .config-responsive-card{
