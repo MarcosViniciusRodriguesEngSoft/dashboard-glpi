@@ -13,11 +13,13 @@ border-radius: 10px;
 @media (max-width: 1400px) {
     height: 100%;
     width: 100%;
-    margin: 15px;
+    //margin: 15px;
 }
 
 @media (max-width: 400px) {
-    margin-bottom: 0 0 15px 0 !important;
+    height: 100px;
+    width: 175px;
+    margin: 0;
 }
 `;
 
@@ -42,11 +44,15 @@ export const MiniCardContainerCritico = styled.div`
 display: grid;
 align-items: center;
 height: 100px;
-width: 350px;
+width: 175px;
 padding: 5px;
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
 border: 5px outset;
 border-radius: 10px;
+
+@media (max-width: 400px) {
+    width: 350px;
+}
 `;
 
 export const MiniCardContainer = styled.div`
@@ -57,6 +63,11 @@ width: 175px;
 padding: 5px;
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23), 0 0 5px #aaa inset;
 border-radius: 10px;
+
+@media (max-width: 400px) {
+    height: 100px;
+    width: 175px;
+}
 `;
 
 export const MiniTitle = styled.h1`

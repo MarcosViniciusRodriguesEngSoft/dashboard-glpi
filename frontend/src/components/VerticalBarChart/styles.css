@@ -1,6 +1,6 @@
 .vertical-bar-chart {
-    height: 500px;
-    width: 100%;
+    height: 100%;
+    width: max-content;
 }
 
 @media (max-width: 1400px) {
@@ -11,10 +11,10 @@
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 400px) {
 
     .vertical-bar-chart {
         height: 500px;
-        width: 500px;
+        width: 900px;
     }
 }

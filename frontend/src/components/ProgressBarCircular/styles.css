@@ -1,0 +1,39 @@
+.alin-container {
+    position: absolute;
+    /*top: 0;
+    left: 0;*/
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+.margin-space {
+    margin-right: 2px;
+}
+
+.ant-progress-text {
+    width: auto;
+    font-size: 4rem !important;
+    width: 250px !important;
+}
+
+@media (max-width: 400px) {
+
+    .ant-progress-circle {
+        width: 300px !important;
+    }
+
+    .ant-progress-text {
+        font-size: 3rem !important;
+        width: 200px !important;
+        top: 150px !important;
+        left: 150px !important;
+    }
+
+    .config-responsive-progressbarcicle {
+        display: inline-block !important;
+        flex-direction: row !important;
+        height: 100px;
+        width: 100px;
+    }
+}

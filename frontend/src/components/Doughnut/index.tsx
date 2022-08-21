@@ -9,7 +9,7 @@ import "./styles.css";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export function Grafico() {
+export function DoughnutCicle() {
     const [contador, setContador] = useState<IContadorFullDTO>()
     const serviceContador = useContadorService();
 
@@ -45,6 +45,7 @@ export function Grafico() {
                     //'rgba(255, 159, 64, 1)',
                 ],
                 borderWidth: 1,
+
             },
         ],
     }
