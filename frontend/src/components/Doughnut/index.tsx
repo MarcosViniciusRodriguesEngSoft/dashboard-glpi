@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { IContadorFullDTO } from '../../_config/base/contador.service';
 import { useContadorService } from '../../_config/services/contador.service';
-import { abertos, fechados, solucionados } from '../CardTotais';
+
 import * as C from "./styles";
 import "./styles.css";
 
@@ -12,22 +12,25 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 export function DoughnutCicle() {
     const [contador, setContador] = useState<IContadorFullDTO>()
     const serviceContador = useContadorService();
-
+  
     const contadores = () => {
-        serviceContador.Contadores()
-            .then(response => setContador(response.data));
+      serviceContador.contadores()
+        .then(response => {
+          setContador(response.data)
+        });
     }
-
+  
     useEffect(() => {
-        contadores()
-    });
+      contadores();
+    }, []);
+
 
     const data = {
         labels: ['Abertos', 'Solucionados', 'Fechados'],
         datasets: [
             {
                 label: '# of Votes',
-                data: [contador?.abertos, abertos, contador?.solucionados,solucionados, contador?.fechados, fechados],
+                data: [contador?.abertos, contador?.solucionados, contador?.fechados],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',

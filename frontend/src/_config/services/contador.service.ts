@@ -1,13 +1,14 @@
-import { Api } from "../api";
+import http from "../api";
 import { IContadorFullDTO } from "../base/contador.service";
 import { IAxiosResponseCustom } from "../models/http.model";
+
 
 export const useContadorService = () => {
 	const resourceURL = 'dashboard';
 
-	const Contadores = (
+	const contadores = (	
 	): Promise<IAxiosResponseCustom<IContadorFullDTO>> =>
-		Api.get(`${resourceURL}/contador`);
+		http.get(`${resourceURL}/dices`);
 
 	/*const findCustom = (
 		predicate: Predicate = new Predicate()
@@ -97,6 +98,6 @@ export const useContadorService = () => {
 		//...baseFindList<>(
 		//	resourceURL
 		//),
-		Contadores,
+		contadores,
 	};
 };

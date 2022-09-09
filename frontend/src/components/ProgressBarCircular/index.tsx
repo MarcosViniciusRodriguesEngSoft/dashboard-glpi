@@ -1,13 +1,30 @@
+import { useEffect, useState } from 'react';
 import { Progress } from 'antd';
 import { Col, Row } from '../../helpers/styles';
-import { abertos, fechados } from '../CardTotais';
+import { IContadorFullDTO } from '../../_config/base/contador.service';
+import { useContadorService } from '../../_config/services/contador.service';
 import * as C from "./styles";
 import "./styles.css";
 
-const total = abertos - fechados
-const totalPercente = 100 - ((fechados / abertos) * 100)
-
 function ProgressBarCircular() {
+  const [contador, setContador] = useState<IContadorFullDTO | any>();
+  const serviceContador = useContadorService();
+
+  const contadores = () => {
+    serviceContador.contadores()
+      .then(response => {
+        setContador(response.data)
+      });
+  }
+
+  useEffect(() => {
+    contadores();
+    // eslint-disable-next-line
+  }, []);
+
+  const total = contador?.abertos - contador?.fechados
+  const totalPercente = 100 - ((contador?.fechados / contador?.abertos) * 100)
+
   return (
     < C.CardContainer >
       <>
@@ -24,7 +41,7 @@ function ProgressBarCircular() {
               <C.Pixel />
             </Col>
             <Col>
-              <C.Legenda>Abertos: {abertos}</C.Legenda>
+              <C.Legenda>Abertos: {contador?.abertos}</C.Legenda>
             </Col>
           </Row>
           <Row className="config-responsive-progressbarcicle">
@@ -32,7 +49,7 @@ function ProgressBarCircular() {
               <C.Pixel />
             </Col>
             <Col>
-              <C.Legenda>Fechados: {fechados}</C.Legenda>
+              <C.Legenda>Fechados: {contador?.fechados}</C.Legenda>
             </Col>
           </Row>
           <Row className="config-responsive-progressbarcicle">

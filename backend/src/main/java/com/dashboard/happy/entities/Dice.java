@@ -14,7 +14,7 @@ public class Dice {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Integer id;
 	private LocalDate dtAbertura;
 	private LocalDate dtFechamento;
 	private Integer abertos;
@@ -32,11 +32,11 @@ public class Dice {
 	public Dice() {
 	}
 	
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 	
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	

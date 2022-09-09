@@ -3,6 +3,9 @@ export interface IBaseDTO {
 }
 
 export interface IContadorFullDTO extends IBaseDTO {
+    id: number;
+    dataAbertura: Date;
+    dataFechamento: Date;
     abertos:number;
     solucionados:number;
     fechados:number;
